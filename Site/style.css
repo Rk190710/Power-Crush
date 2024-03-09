@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: black;
+}
+.contact-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.contact-left-title{
+    font-weight: 600;
+    color: orange;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: orange;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+.contact-inputs:focus{
+    border: 2px solid #ff994f;
+}
+.contact-inputs::placeholder{
+    color: #a9a9a9;
+}
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #ff994f, #fa6d86);
+    cursor: pointer;
+}
+.contact-right img{
+    width: 500px;
+}
+@media (max-width:800px){
+    .contact-inputs{
+        width: 80vw;
+    }
+    .contact-right{
+        display: none;
+    }
+}
+.container .title{
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    text-shadow: 0 .3rem 0.5rem, rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: 000;
+    text-transform: capitalize;
+}
+.container .video-all{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container .video-all .video{
+    height: 15rem; width: 16rem;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.7);
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: 1rem;
+
+}
+.container .video-all .video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.container .video-all .video video:hover{
+    transition: 0.2s linear;
+    transform: scale(1.3);
+}
+
+.container .video-all .video .active{
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto; width: 80%;
+    box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+.container .video-all .video .active:hover{
+    transition: none;
+    transform: scale(1) translate(-50%, -50%);
+}
+
+/*-------- custom scrollbar -------- */
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background: #d1e5ff;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#FFA500, #FFFF00);
+    border-radius: 10px;
+}
+h3{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
